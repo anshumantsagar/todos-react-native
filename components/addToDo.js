@@ -9,6 +9,7 @@ export default function AddToDo(props) {
         <View>
             <TextInput
                 placeholder='new todo..'
+                value={text}
                 onChangeText={val => {
                     setText(val);
                     console.log(val);

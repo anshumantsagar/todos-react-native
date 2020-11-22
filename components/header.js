@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 export default Header = () => {
     return (
@@ -14,7 +14,7 @@ export default Header = () => {
 const styles = StyleSheet.create({
     header: {
         height: 80,
-        paddingTop: 38,
+        paddingTop: StatusBar.currentHeight,
         backgroundColor: 'coral'
     },
     title: {
